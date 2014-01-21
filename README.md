@@ -2,9 +2,11 @@
 
 A limited implementation of the classic game of Snake.
 
+This is a proof-of-concept, and avoids the use of (n)curses and readline.
+
 ## Gameplay
 
-`php snake.php`
+`$ php snake.php`
 
 Move the snake with the arrow keys. Eat the fruit. Avoid your tail.
 
@@ -13,7 +15,7 @@ To quit during the game, press ESCape. Otherwise your terminal may not be reset 
 ## Requirements
 
 * Terminal with TTY emulation
-* PHP 5 (tested with 5.3, but probably works with 5.0+)
+* PHP 5 CLI (tested with 5.3, but probably works with 5.0+)
 
 ## Important Information
 
