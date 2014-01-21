@@ -235,7 +235,7 @@ class SnakeBoard {
      * Do the initial setup
      */
     public function setup(){
-        $this->_clear();
+        $this->_clearScreen();
         $this->_drawGrid();
         $this->_resetCursor();
     }
@@ -298,8 +298,9 @@ class SnakeBoard {
     /**
      * Clear the screen
      */
-    protected function _clear(){
-        echo $this->_ansi('2J');
+    protected function _clearScreen(){
+        $this->_moveCursor(array(0,0));
+        echo $this->_ansi('J');
     }
     
     /**
